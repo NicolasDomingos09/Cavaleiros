@@ -33,7 +33,7 @@ public class Cavaleiro extends Thread{
 		while(totalCaminhado < tamanho) {
 			try {
 				sleep(50);
-				int passo = (rand.nextInt(2,4)+item);
+				int passo = (rand.nextInt(2,5)+item);
 				totalCaminhado += passo;
 				//System.out.println("Cavaleiro " + cavaleiro + " caminhou " + passo + " metros." + " Total percorrido " + totalCaminhado);
 				
@@ -72,9 +72,9 @@ public class Cavaleiro extends Thread{
 		
 		boolean saiu = false;
 		while(!saiu) {
-			int escolha = rand.nextInt(1,4);
+			int escolha = rand.nextInt(1,5);
 			if(portas[(escolha-1)] == (-1)) {
-				escolha = rand.nextInt(1,4);
+				escolha = rand.nextInt(1,5);
 			}else {
 				if(portas[(escolha-1)] == 1){
 					System.out.println("O cavaleiro " + cavaleiro + " conseguiu sair pela porta ");
