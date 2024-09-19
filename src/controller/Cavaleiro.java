@@ -15,9 +15,6 @@ public class Cavaleiro extends Thread{
 	static boolean pedra = false;
 	boolean temItem = false;
 	
-	static int minPorta = 1;
-	static int maxPorta = 4;
-	
 	private int item = 0;
 	static int portas[] = {0, 0, 1, 0};
 	
